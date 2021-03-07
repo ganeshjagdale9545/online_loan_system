@@ -1,0 +1,84 @@
+<div class="row" >
+        <div class="col-sm-3"">
+            <div style="background-color: rgba(219, 203, 157, 0.568);min-height:450px;margin: 35px 10px;border-radius: 5px;">
+         <center> <img src="user.png" width="100px" style="margin:-25px 0px 0px 0px;"> </center>
+         <center><h2 style="background-color:rgb(155, 1, 1);color:white;margin: 0px;">ADMINITRATOR</h2></center>
+         <button onclick="logout()" style="background-color: rgb(72, 10, 241);border-radius:5px;color:white;padding:1px;">Logout</button>
+        <center> <table style="width: 90%;">
+             <tr>
+                 <td>
+                     <br>
+                     <b>All</b>
+                 </td>
+                 <td>
+                     <br>
+                    </td>
+                    <td>
+                         <br>
+                         <button onclick="view('1')" style="background-color: rgb(72, 10, 241);border-radius:5px;color:white;padding:5px;">View</button>
+                        </td>
+             </tr>
+             <tr>
+                 <td>
+                     <br>
+                     <b>By Id</b>
+                 </td>
+                 <td>
+                     <br>
+                     <input type="text" id="id" style="width: 70%;border-radius: 5px;">
+                 </td>
+                 <td>
+                     <br>
+                     <button onclick="view('2')" style="background-color: rgb(72, 10, 241);border-radius:5px;color:white;padding:5px;">View</button>
+                 </td>
+             </tr>
+             <tr>
+                   <td> 
+                       <br>
+                <b>By Type</b>
+     </td>
+         <td><br> 
+            <select id="ltype" style="width: 90%;border-radius:5px;">
+                    <option value="Education">Education</option>
+                    <option value="Mortgag">Mortgag</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Business">Business</option>
+                    <option value="Car">Car</option>
+                    <option value="Home">Home</option>
+                </select>
+         </td>
+         <td>
+             <br>
+             <button onclick="view('3')" style="background-color: rgb(72, 10, 241);border-radius:5px;color:white;padding:5px;">View</button>
+         </td>
+     </tr>
+     <tr>
+            <td> 
+                <br>
+         <b>By Status</b>
+</td>
+  <td><br> 
+     <select id="status" style="width: 90%;border-radius:5px;">
+             <option value="Applid">Applid</option>
+             <option value="Documentation">Documentation</option>
+             <option value="Hold">Hold</option>
+             <option value="Rejected">Rejected</option>
+             <option value="Pass">Pass</option>
+         </select>
+  </td>
+  <td>
+      <br>
+      <button onclick="view('4')" style="background-color: rgb(72, 10, 241);border-radius:5px;color:white;padding:5px;">View</button>
+  </td>
+</tr>
+         </table></center>
+            </div>
+        </div>
+        <div class="col-sm-9">
+                <div style="background-color: rgba(219, 203, 157, 0.568);min-height:450px;margin: 35px 10px;border-radius: 5px;padding: 0% 2px;">
+                   <center> <h1 style="background-color: rgb(218, 161, 55);color:white;border-radius: 5px;margin: 0% -2px;">Applications</h1></center>
+                    <div id="list"></div>
+                   <br></div>
+    </div>
+    </div>
+        
